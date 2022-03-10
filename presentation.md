@@ -59,7 +59,8 @@ Where $x$ is the point in question and $u_i$ is the $i$th nearest neighbor of $x
 
 # Experiment 1: Maze
 $$
-\includegraphics[width=200px]{"images/maze.png"}
+\includegraphics[width=150px]{"images/robot_input.png"}
+\includegraphics[width=150px]{"images/maze.png"}
 $$
 
 - Great for deception problems because dead ends that lead close to the goal are local optima
