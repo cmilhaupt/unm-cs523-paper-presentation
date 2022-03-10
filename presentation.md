@@ -51,9 +51,42 @@ University of New Mexico
     * Average distance to *k*-nearest neighbors
 * Still needs to check distance to objective to know when to stop
 
-# Experiment 1
+# Experiment 1: Maze
+$$
+\includegraphics[width=200px]{"images/maze.png"}
+$$
 
-* point
+- Great for deception problems because dead ends that lead close to the goal are local optima
+- Fitness-based NEAT metric is defined as the distance from the robot to the goal at the end of an evaluation
+- Novelty-based NEAT metric rewards the robot for ending in a place where none have ended before; the method of traversal is ignored
+
+# Experiment 1: Maze Results
+$$
+\includegraphics[width=200px]{"images/maze_performance.png"}
+$$
+
+- Fitness-based NEAT was three times slower (56k evaluations vs 18k)
+- The average genomic complexity of solutions evolved by fitness-based NEAT was almost three times greater  than those evolved by Novelty-based NEAT
+- The hard map was solved 3/40 times by fitness-based NEAT and 39/40 times by novelty-based NEAT
+
+# Experiment 1: Maze Behaviors
+$$
+\includegraphics[width=150px]{"images/maze_with_walls_comparison.png"}
+$$
+
+- Bounding the Size of the Archive in the Maze Domain
+    + Possible to limit the archive size, and thus additional computational effort, without significantly decreasing the performance of novelty search
+- Removing Walls in the Maze Domain
+    + Fitness fares no better; fitness-based search is not necessarily a viable alternative even when novelty search is not effective
+
+# Experiment 1: Maze Behaviors
+
+- Lengthening the Behavioral Characterization
+    + High-dimensional behavior characterization is not a sufficient basis for predicting that novelty search should fail
+- Reducing the Precision of the Behavioral Characterization
+    + Archive size can be limited without significant loss of performance
+- Characterizing Behavior as the Fitness Measure
+    + This type of conflation can be disruptive to novelty search
 
 # Biped Experiment
 
@@ -71,4 +104,12 @@ University of New Mexico
 
 # Discussion/Conclusion
 
-* point
+- Objective Limitations
+- Domain-Independent Open-Endedness
+- Novelty Search and Natural Evolution
+- The Arrow of Complexity
+- Further Results on Novelty Search
+
+\begin{center}
+Novelty search suggests a surprising new perspective on achievement: To achieve your highest goals, you must be willing to abandon them
+\end{center}
