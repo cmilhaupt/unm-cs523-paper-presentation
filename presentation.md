@@ -1,14 +1,20 @@
 # Title
 
-Abandoning Objective Abandoning Objectives: Evolution Through Through the Search for Novelty Alone
+\begin{center}
+\LARGE Abandoning Objectives: Evolution Through Through the Search for Novelty Alone
+\end{center}
 
+\begin{center}
 Joel Lehman
 University of Central Florida
 Kenneth O. Stanley
 University of Central Florida
+\end{center}
 
-Colin Milhaupt & Greg Jacobus
+\begin{center}
+Colin Milhaupt \& Greg Jacobus
 University of New Mexico
+\end{center}
 
 # Introduction
 
