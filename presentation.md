@@ -1,20 +1,15 @@
-# Title
+\title{Abandoning Objectives: Evolution Through Through the Search for Novelty Alone}
+\author{Joel Lehman \& Kenneth O. Stanley}
+\institute{University of Central Florida}
+\author{Greg Jacobus \& Colin Milhaupt}
+\institute{University of New Mexico}
+\author[shortname]{Joel Lehman \inst{1} \and Kenneth O. Stanley \inst{1} \\%
+    \and Greg Jacobus \inst{2} \and Colin Milhaupt \inst{2}
+}
+\institute[shortinst]{\inst{1} University of Central Florda\and %
+                      \inst{2} University of New Mexico}
 
-\begin{center}
-\LARGE Abandoning Objectives: Evolution Through Through the Search for Novelty Alone
-\end{center}
-
-\begin{center}
-Joel Lehman
-University of Central Florida
-Kenneth O. Stanley
-University of Central Florida
-\end{center}
-
-\begin{center}
-Colin Milhaupt \& Greg Jacobus
-University of New Mexico
-\end{center}
+\maketitle
 
 # Introduction
 
@@ -54,10 +49,14 @@ University of New Mexico
 
 # Novelty Search Algorithm
 
-* Replace objective function with novelty function in NEAT
-* Characterize how far new result is from all previous results
-    * Average distance to *k*-nearest neighbors
-* Still needs to check distance to objective to know when to stop
+- Replace objective function with novelty function in NEAT
+    + Key idea: reward divergence from prior behavior
+- Create a spatial mapping of evolved solutions
+- Use k-means to measure sparsity (higher is better)
+
+$$ \rho (x) = \frac{1}{k}\sum_{i=0}^k \text{dist}(x, u_i)  $$
+
+Where $x$ is the point in question and $u_i$ is the $i$th nearest neighbor of $x$
 
 # Experiment 1: Maze
 $$
