@@ -1,0 +1,13 @@
+* Objective functions themselves may actively misdirect search toward dead ends
+* Instead of modeling natural evolution with the hope that novel individuals will be continually discovered, it is possible to create an open-ended dynamic by simply searching directly for novelty.
+* instead of rewarding performance based on an objective, novelty search rewards diverging from prior behaviors. 
+Bounding the Size of the Archive in the Maze Domain
+*  in some domains it is possible to limit the archive size, and thus the additional computational effort, without significantly decreasing the performance of novelty search.
+Removing Walls in the Maze Domain
+* constraining the space of possible behaviors is important in some domains for novelty search to be efficient. However, fitness fares no better, highlighting that fitness-based search is not necessarily a viable alternative even when novelty search is not effective.
+Lengthening the Behavioral Characterization
+* high-dimensional behavior characterization is not a sufficient basis for predicting that novelty search should fail
+Reducing the Precision of the Behavioral Characterization
+* novelty search still works well with large amounts of such behavioral conflation because the stepping stones are still respected, although at a lower resolution. Thus, archive size can be limited without significant loss of performance
+Characterizing Behavior as the Fitness Measure
+* this type of conflation can be disruptive to novelty search
