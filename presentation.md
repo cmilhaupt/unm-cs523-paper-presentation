@@ -67,6 +67,8 @@ University of New Mexico
 * The novelty function produced models that were significantly less complex
 * [Video](https://www.youtube.com/watch?v=lyZorMEvmjM)
 
+![Biped Robot](biped_robot.png){width=10%}
+
 # Discussion/Conclusion
 
 * point
