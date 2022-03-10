@@ -72,3 +72,14 @@ $$
 
 - point
 
+# Discussion & Conclusion
+
+- Objective Limitations
+- Domain-Independent Open-Endedness
+- Novelty Search and Natural Evolution
+- The Arrow of Complexity
+- Further Results on Novelty Search
+
+\begin{center}
+Novelty search suggests a surprising new perspective on achievement: To achieve your highest goals, you must be willing to abandon them
+\end{center}
