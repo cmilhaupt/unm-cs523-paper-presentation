@@ -21,6 +21,8 @@ University of New Mexico
 * How can we use these approaches to model evolution?
 * Main idea: The objective function isn't as perfect as we used to think, sometimes novelty functions work better.
 
+![Chinese Finger Trap](chinese_finger_trap.jpeg){width=35%}
+
 # Background
 
 * Deception -- when lower-order building blocks are combined and don't lead to a global optimum.
@@ -34,7 +36,13 @@ University of New Mexico
 
 # The Search for Novelty
 
-* point
+* Learning method is rewarded finding instances that are significantly different from any found before
+* Biped locomotion example:
+    * Novelty function would reward falling in new ways (maybe eventually walking)
+    * Objective function function would reward falling the furthest
+* Novelty search is different from exhaustive search
+    * Domain typically limits the variety of behaviors
+    * Since NEAT starts simple and complexifies, it is much better than random.
 
 # Novelty Search Algorithm
 
@@ -44,7 +52,10 @@ University of New Mexico
 
 * point
 
-# Experiment 2
+# Biped Experiment
+
+* [Video](https://www.youtube.com/watch?v=lyZorMEvmjM)
+
+# Discussion/Conclusion
 
 * point
-
