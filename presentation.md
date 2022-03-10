@@ -35,7 +35,6 @@ University of New Mexico
     * Multi-Objective Evolutionary Algorithms can sometimes fight deception by training against multiple objectives.
     * Incremental evolution of objective functions can also help
         * Implies the need to track the "stepping stones" that lead to the objective
-* Selection pressure restricts the scope and direction of search
 * NeuroEvolution of Augmenting Topologies (NEAT)
     * Evolves artificial neural networks
     * Complexifies the network over generations
@@ -43,14 +42,14 @@ University of New Mexico
 # The Search for Novelty
 
 * Learning method is rewarded for finding instances that are significantly different from any found before
+* Seems naive $\rightarrow$ where is the pressure to adapt?
+    * Not necessary $\rightarrow$ stepping stones are rewarded
 * Biped locomotion example:
     * Novelty function would reward falling in new ways (maybe eventually walking)
     * Objective function function would reward falling the furthest
 * Novelty search is different from exhaustive search
     * Domain typically limits the variety of behaviors
     * Since NEAT starts simple and complexifies, it is much better than random.
-* Seems naive $\rightarrow$ where is the pressure to adapt?
-    * Not necessary $\rightarrow$ stepping stones are rewarded
 
 # Novelty Search Algorithm
 
@@ -112,9 +111,9 @@ $$
 
 # Discussion/Conclusion
 
+* Novelty function is not *always* better, but objective functions are not perfect.
 * Novelty and objective functions can be used together so the benefits of both are included.
     * Search for novelty, optimize with objective
-* Novelty function is not *always* better, but objective functions are not perfect.
 * When does novelty search not work? -- Future work
 * Evolution is not explicitly a search for novelty
     * But, novelty search does appear in natural evolution
