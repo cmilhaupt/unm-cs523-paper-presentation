@@ -16,7 +16,7 @@ University of New Mexico
 * Previous approaches primarily used objective functions.
     * Example: Chinese finger trap
     * Problem: Only finds local optima (deception)
-* New Idea: search for novelty instead.
+* New Idea: Search for novelty instead.
     * Completely ignores the objective
 * How can we use these approaches to model evolution?
 * Main idea: The objective function isn't as perfect as we used to think, sometimes novelty functions work better.
@@ -46,7 +46,10 @@ University of New Mexico
 
 # Novelty Search Algorithm
 
-* point
+* Replace objective function with novelty function in NEAT
+* Characterize how far new result is from all previous results
+    * Average distance to *k*-nearest neighbors
+* Still needs to check distance to objective to know when to stop
 
 # Experiment 1
 
@@ -54,6 +57,14 @@ University of New Mexico
 
 # Biped Experiment
 
+* A more challenging problem than the Maze Problem
+* Robot needs to walk as far as possible in given time
+    * 6 DOF -- pitch and roll in each hip, pitch in knee
+* Novelty metric: each second, sample the offset of the center of mass
+* Average distance traveled for:
+    * Objective Function: 2.88 meters
+    * Novelty Function: 4.04 meters
+* The novelty function produced models that were significantly less complex
 * [Video](https://www.youtube.com/watch?v=lyZorMEvmjM)
 
 # Discussion/Conclusion
