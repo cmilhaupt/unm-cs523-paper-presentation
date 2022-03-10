@@ -42,13 +42,15 @@ University of New Mexico
 
 # The Search for Novelty
 
-* Learning method is rewarded finding instances that are significantly different from any found before
+* Learning method is rewarded for finding instances that are significantly different from any found before
 * Biped locomotion example:
     * Novelty function would reward falling in new ways (maybe eventually walking)
     * Objective function function would reward falling the furthest
 * Novelty search is different from exhaustive search
     * Domain typically limits the variety of behaviors
     * Since NEAT starts simple and complexifies, it is much better than random.
+* Seems naive $\rightarrow$ where is the pressure to adapt?
+    * Not necessary $\rightarrow$ stepping stones are rewarded
 
 # Novelty Search Algorithm
 
@@ -110,11 +112,12 @@ $$
 
 # Discussion/Conclusion
 
-- Objective Limitations
-- Domain-Independent Open-Endedness
-- Novelty Search and Natural Evolution
-- The Arrow of Complexity
-- Further Results on Novelty Search
+* Novelty and objective functions can be used together so the benefits of both are included.
+    * Search for novelty, optimize with objective
+* Novelty function is not *always* better, but objective functions are not perfect.
+* When does novelty search not work? -- Future work
+* Evolution is not explicitly a search for novelty
+    * But, novelty search does appear in natural evolution
 
 \begin{center}
 Novelty search suggests a surprising new perspective on achievement: To achieve your highest goals, you must be willing to abandon them
